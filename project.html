@@ -1,0 +1,77 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arp_Editz</title>
+    <link rel="stylesheet" href="pro.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to ARP_Edits</h1>
+        <div class="platform-choice">
+            <a href="https://youtube.com/@arp_editz08?si=KfpSh8jDsbHoKVD8" class="btn youtube-btn">YouTube</a>
+            <a href="https://www.instagram.com/momentsby_arpan?igsh=MWUxeTE3cDhra2I0aA==" class="btn instagram-btn">Instagram </a>
+        </div>
+    </header>
+    <main>
+        <section id="metrics">
+            <div class="metric-card">
+                <h3 onclick="showSubscriberStats()" style="cursor: pointer;">Subscriber Growth</h3>
+                <div class="chart" id="subs-chart"></div>
+            </div>
+            <div class="metric-card">
+                <h3 onclick="showPopularVideos()" style="cursor: pointer;">Popular Videos</h3>
+                <div class="video-list" id="top-videos"></div>
+            </div>
+        </section>
+       
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="logo">ARP_Edits</div>
+            <p>Making social media growth accessible to everyone</p>
+            <div class="social-links">
+                <a href="#">T</a>
+                <a href="#">R</a>
+                <a href="#">E</a>
+                <a href="#">L</a>
+            </div>
+            <p>© 2023 ARP_Edits. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+<script>
+  function showSubscriberStats()
+   {
+    const subsChart = document.getElementById("subs-chart");
+    subsChart.innerHTML = `
+      <p><strong>Subscribers:</strong> 1.16k +</p>
+      <p><strong>Likes:</strong> 20k + </p>
+      <p><strong>Shares:</strong> 2.3k + </p>
+      <p><strong>Comments:</strong> 1k+ </p>
+    `;
+  }
+</script>
+<script>
+  function showPopularVideos() {
+    const videoList = document.getElementById("top-videos");
+    videoList.innerHTML = `
+      <button class="video-btn" onclick="window.open('https://youtu.be/IlehUIUqTQI?si=-lzmnmGlKKViaNSh', '_blank')">
+        🔗 The Life of a Coder | Short Film ❤️🎥
+      </button>
+      <button class="video-btn" onclick="window.open('https://youtu.be/9Bwq6fdep0M?si=DyiQKu3knYXA6h_z', '_blank')">
+        🔗 Bollywood Carnival Freshers Party 2025 🤩
+      </button>
+      <button class="video-btn" onclick="window.open('https://youtu.be/LvF0ZSlr_do?si=edH21l2mGZPEFSAE', '_blank')">
+        🔗 7 Years Later..Still Dreaming 💕| Daman Sunset ☀️
+      </button>
+      <button class="video-btn" onclick="window.open('https://youtu.be/LvF0ZSlr_do?si=edH21l2mGZPEFSAE', '_blank')">
+        🔗 Treaditional Day Celebrations🎥| Collage-Vlog 😍
+      </button>
+    `;
+  }
+</script>
+</html>
